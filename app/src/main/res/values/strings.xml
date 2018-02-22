@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Favorite Contacts</string>
+    <string name="dadPhone">507-993-3334</string>
+    <string name="dadName">Dad</string>
+    <string name="momPhone">507-951-8375</string>
+    <string name="momName">Mom</string>
+    <string name="grandmaPhone">712-330-5619</string>
+    <string name="grandmaName">Grandma</string>
+</resources>
