@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /**
-         *   Set up button click event listener for the call button for the second contact
+         *   Set up button click event listener for the call button for the third contact
          */
         btnGmaPhone = (Button) findViewById(R.id.btnGmaPhone);
         btnGmaPhone.setOnClickListener(new View.OnClickListener() {
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /**
-         *   Set up button click event listener for the text button for the second contact
+         *   Set up button click event listener for the text button for the third contact
          */
         btnGmaText = (Button) findViewById(R.id.btnGmaText);
         btnGmaText.setOnClickListener(new View.OnClickListener() {
