@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">Favorite Contacts</string>
-    <string name="dadPhone">507-993-3334</string>
+    <string name="dadPhone">507-993-1234</string>
     <string name="dadName">Dad</string>
-    <string name="momPhone">507-951-8375</string>
+    <string name="momPhone">507-951-1342</string>
     <string name="momName">Mom</string>
-    <string name="grandmaPhone">712-330-5619</string>
+    <string name="grandmaPhone">712-330-1234</string>
     <string name="grandmaName">Grandma</string>
+    <string-array name="textSelections">
+        <item>Hi</item>
+        <item>I am home</item>
+        <item>Homework is done</item>
+        <item>Going to play outside</item>
+    </string-array>
+    <string name="callButton">Call</string>
+    <string name="textButton">Text</string>
+    <string name="selectInstruction">Select text to send:</string>
 </resources>

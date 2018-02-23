@@ -5,12 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    tools:context="bernhardt.favoritecontacts.MainActivity"
-    android:orientation="vertical">
+    tools:context="bernhardt.favoritecontacts.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -35,6 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/dadName"
             app:srcCompat="@mipmap/dad"/>
 
         <TextView
@@ -46,35 +47,60 @@
             android:text="@string/dadName"/>
 
         <TextView
-            android:text="@string/dadPhone"
+            android:id="@+id/tvDadPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvDadPhone"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:text="@string/dadPhone"
+            tools:text="@string/dadPhone"/>
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/interact1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <Button
             android:id="@+id/btnDadPhone"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_green_light"
-            android:text="Call"/>
+            android:text="@string/callButton"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSelect1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/selectInstruction"/>
+
+            <Spinner
+                android:id="@+id/spnDadText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:entries="@array/textSelections"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnDadText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_blue_bright"
-            android:text="Text"/>
+            android:text="@string/textButton"/>
 
     </LinearLayout>
 
@@ -89,6 +115,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/momName"
             app:srcCompat="@mipmap/mom"/>
 
         <TextView
@@ -111,27 +138,52 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/interact2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="?attr/colorButtonNormal"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <Button
             android:id="@+id/btnMomPhone"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_green_light"
-            android:text="Call"/>
+            android:text="@string/callButton"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSelect2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/selectInstruction"
+                android:textColor="@android:color/black"/>
+
+            <Spinner
+                android:id="@+id/spnMomText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:entries="@array/textSelections"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnMomText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_blue_bright"
-            android:text="Text"/>
+            android:text="@string/textButton"/>
 
     </LinearLayout>
 
@@ -146,6 +198,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/transparent"
+            android:contentDescription="@string/grandmaName"
             app:srcCompat="@mipmap/grandma"/>
 
         <TextView
@@ -166,25 +219,48 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:id="@+id/interact3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <Button
             android:id="@+id/btnGmaPhone"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_green_light"
-            android:text="Call"/>
+            android:text="@string/callButton"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSelect3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/selectInstruction"/>
+
+            <Spinner
+                android:id="@+id/spnGmaText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:entries="@array/textSelections"/>
+        </LinearLayout>
 
         <Button
             android:id="@+id/btnGmaText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_blue_bright"
-            android:text="Text"/>
+            android:text="@string/textButton"/>
 
     </LinearLayout>
 
