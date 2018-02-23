@@ -11,6 +11,7 @@
         <item>I am home</item>
         <item>Homework is done</item>
         <item>Going to play outside</item>
+        <item>Can I get a snack?</item>
     </string-array>
     <string name="callButton">Call</string>
     <string name="textButton">Text</string>
